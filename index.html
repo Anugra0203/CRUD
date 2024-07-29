@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+
+<body>
+
+    <div class="crud-container">
+        <div class="crud-images">
+            <img src="assests/c.png" alt="Create Image">
+            <img src="assests/r.png" alt="Read Image">
+            <img src="assests/u.png" alt="Update Image">
+            <img src="assests/d.png" alt="Delete Image">
+        </div>
+
+        <div class="crud-sections">
+            <div class="crud-section" id="create-section">
+                <h2>Create</h2>
+                <form id="createForm">
+                    <input type="text" id="createInput" placeholder="Enter item...">
+                    <button type="submit">Add Item</button>
+                </form>
+            </div>
+
+            <div class="crud-section" id="read-section">
+                <h2>Read</h2>
+                <ul id="itemList">
+                </ul>
+            </div>
+
+            <div class="crud-section" id="update-section">
+                <h2>Update</h2>
+                <form id="updateForm">
+                    <input type="text" id="updateInput" placeholder="Enter new item...">
+                    <button type="submit">Update Item</button>
+                </form>
+            </div>
+
+            <div class="crud-section" id="delete-section">
+                <h2>Delete</h2>
+                <form id="deleteForm">
+                    <input type="text" id="deleteInput" placeholder="Enter item to delete...">
+                    <button type="submit">Delete Item</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
